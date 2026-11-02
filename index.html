@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viva Leve</title>
+  <meta name="description" content="Viva Leve — e-book de nutrição anti-inflamatória com estratégias práticas para reduzir a inflamação, melhorar a energia e recuperar o equilíbrio metabólico.">
+  <meta name="theme-color" content="#22040e">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viva Leve">
+  <meta property="og:description" content="Estratégias práticas para reduzir a inflamação, melhorar sua energia e recuperar seu equilíbrio metabólico.">
+  <meta property="og:image" content="https://res.cloudinary.com/dalwymbky/image/upload/v1782349613/hero_ujkhmy.png">
+  <meta property="og:locale" content="pt_BR">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Mulish:wght@400;600;700&display=swap">
+  <link rel="preload" as="image" href="https://res.cloudinary.com/dalwymbky/image/upload/v1782349613/hero_ujkhmy.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reusable inline SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-mark" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M24 4c4 6 4 12 0 18-4-6-4-12 0-18Z"/>
+          <path d="M24 44c-4-6-4-12 0-18 4 6 4 12 0 18Z"/>
+          <path d="M4 24c6-4 12-4 18 0-6 4-12 4-18 0Z"/>
+          <path d="M44 24c-6 4-12 4-18 0 6-4 12-4 18 0Z"/>
+          <path d="M9.9 9.9c7 1.4 11 5.4 12.2 12.2C15.3 20.9 11.3 16.9 9.9 9.9Z"/>
+          <path d="M38.1 38.1c-7-1.4-11-5.4-12.2-12.2 6.8 1.2 10.8 5.2 12.2 12.2Z"/>
+          <path d="M38.1 9.9c-1.4 7-5.4 11-12.2 12.2 1.2-6.8 5.2-10.8 12.2-12.2Z"/>
+          <path d="M9.9 38.1c1.4-7 5.4-11 12.2-12.2-1.2 6.8-5.2 10.8-12.2 12.2Z"/>
+        </g>
+        <circle cx="24" cy="24" r="2.4" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 16 16">
+        <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 16 16">
+        <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 20 20">
+        <path d="M3 4.5c2.4-1 4.8-1 7 .6 2.2-1.6 4.6-1.6 7-.6v11c-2.4-1-4.8-1-7 .6-2.2-1.6-4.6-1.6-7-.6v-11ZM10 5.1v11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-leaf" viewBox="0 0 20 20">
+        <path d="M4 16c0-7 4.5-11 12-12 0 7.5-4 12-11 12M4 16l6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 20 20">
+        <path d="M3.5 3.5h5v5h-5zM11.5 3.5h5v5h-5zM3.5 11.5h5v5h-5zM11.5 11.5h5v5h-5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-gift" viewBox="0 0 20 20">
+        <path d="M3 8h14v3H3zM4.5 11h11v6h-11zM10 8v9M10 8C8.5 5 5.5 4.6 5.5 6.4 5.5 8 10 8 10 8Zm0 0c1.5-3 4.5-3.4 4.5-1.6C14.5 8 10 8 10 8Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-chat" viewBox="0 0 20 20">
+        <path d="M3.5 4.5h13v9h-7l-4 3v-3h-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-tag" viewBox="0 0 20 20">
+        <path d="M3 3.5h6.5l7.5 7.5-6 6L3.5 9.5zM6.6 6.6h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 20 20">
+        <path d="M10 2.5 16 5v4.6c0 3.8-2.5 6.6-6 7.9-3.5-1.3-6-4.1-6-7.9V5zM7 10l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 20 20">
+        <circle cx="10" cy="7" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M3.8 17c.9-3.2 3.3-5 6.2-5s5.3 1.8 6.2 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-help" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="7.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M7.8 7.8a2.3 2.3 0 1 1 3.2 2.1c-.7.3-1 .8-1 1.5v.4M10 14.3h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 16 16">
+        <path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 16 16">
+        <path d="M4.5 4.5l7 7M11.5 4.5l-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+
+    <!-- ============ 1 · HERO ============ -->
+    <section class="hero__section" id="topo">
+      <div class="hero__content">
+        <div class="brand" data-reveal="fade-up">
+          <svg class="brand__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+          <span class="brand__name">Viva Leve</span>
+        </div>
+        <h1 class="hero__title" data-reveal="title-write">Descubra agora estratégias práticas que vão <span>reduzir a inflamação, melhorar sua energia e recuperar seu equilíbrio metabólico</span></h1>
+        <p class="hero__text" data-reveal="fade-up">Você vai ter acesso a informações valiosas, baseadas na prática clínica de uma nutricionista especializada em saúde integrativa, com foco em alimentação anti-inflamatória e bem-estar duradouro.</p>
+        <a class="hero__cta" href="#precos" data-reveal="soft-scale">
+          <span>Quero começar agora</span>
+          <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 2 · ABOUT E-BOOK ============ -->
+    <section class="about-ebook" id="sobre">
+      <div class="about-ebook__inner">
+        <span class="chip chip--light" data-reveal="fade-up"><svg><use href="#i-book"/></svg>Sobre O E-book</span>
+        <h2 class="section-title about-ebook__title" data-reveal="title-write">Como este e-book <span>vai te ajudar?</span></h2>
+
+        <div class="about-ebook__card" data-reveal="blur-in">
+          <div class="about-ebook__media" aria-hidden="true">
+            <span class="about-ebook__corner about-ebook__corner--top"></span>
+            <span class="about-ebook__corner about-ebook__corner--bottom"></span>
+            <div class="book-stack">
+              <div class="book book--back"></div>
+              <div class="book book--front"></div>
+              <span class="book-pen"></span>
+            </div>
+          </div>
+          <div class="about-ebook__copy">
+            <p>Esse e-book único é fonte de conhecimento especializado, que combina anos de estudo, prática clínica e aplicação real na rotina.</p>
+            <p>Você vai descobrir o <strong>PASSO A PASSO</strong> para organizar a sua alimentação, <strong>DESINFLAMAR</strong> o seu organismo e ganhar mais disposição, transformando saúde em prática diária. São estratégias aplicáveis e sustentáveis.</p>
+            <p>Este é um e-book completo, com base em evidências e orientações práticas, para melhorar sua digestão, reduzir inchaço, apoiar o metabolismo e criar hábitos que realmente funcionam!</p>
+            <a class="hero__cta" href="#precos">
+              <span>Quero começar agora</span>
+              <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3 · REASONS / METHOD ============ -->
+    <section class="reasons" id="metodo">
+      <span class="notch" aria-hidden="true"><svg><use href="#i-chevron"/></svg></span>
+      <div class="reasons__inner">
+        <span class="chip chip--dark" data-reveal="fade-up"><svg><use href="#i-leaf"/></svg>Motivos</span>
+        <h2 class="section-title reasons__title" data-reveal="title-write"><span>Como funciona</span> o método para desinflamar o corpo, recuperar a disposição e construir hábitos saudáveis</h2>
+
+        <div class="reasons__grid">
+          <article class="reason-card" data-reveal="slide-right">
+            <span class="reason-card__label">Etapa 01</span>
+            <p>Primeiro, você entende quais hábitos e escolhas do dia a dia estão aumentando inflamação, inchaço, cansaço e desconfortos, para identificar com mais clareza o que precisa ser ajustado.</p>
+          </article>
+          <article class="reason-card" data-reveal="slide-left">
+            <span class="reason-card__label">Etapa 02</span>
+            <p>Depois, você aprende como organizar a alimentação de forma mais equilibrada, com orientações práticas para montar refeições, escolher melhor os alimentos e criar uma rotina anti-inflamatória mais simples de seguir.</p>
+          </article>
+          <article class="reason-card reason-card--featured" data-reveal="tilt-up">
+            <div class="reason-card__body">
+              <span class="reason-card__label">Etapa 03</span>
+              <p>Por fim, o método mostra como transformar esse conhecimento em constância, com estratégias para aplicar no cotidiano, reduzir excessos, sustentar bons hábitos e sentir mais leveza, energia e bem-estar ao longo do tempo.</p>
+            </div>
+            <div class="reason-card__visual" aria-hidden="true">
+              <div class="reason-card__photo"></div>
+              <div class="reason-card__book"></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-cta" data-reveal="soft-scale">
+          <a class="hero__cta" href="#precos">
+            <span>Quero começar agora</span>
+            <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4 · CONTENTS CAROUSEL ============ -->
+    <section class="contents" id="conteudos">
+      <div class="contents__header">
+        <div class="contents__intro">
+          <span class="chip chip--dark" data-reveal="fade-up"><svg><use href="#i-grid"/></svg>Conteúdos</span>
+          <h2 class="section-title contents__title" data-reveal="title-write"><span>Qual conteúdo</span><br>você vai encontrar<br>neste e-book?</h2>
+        </div>
+        <div class="contents__aside" data-reveal="fade-up">
+          <span class="contents__line"></span>
+          <button class="round-btn contents__head-btn" type="button" aria-label="Próximo conteúdo" data-carousel-next="contents">
+            <svg><use href="#i-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="carousel contents__carousel" data-carousel="contents" data-mode="bounce">
+        <div class="carousel__track contents__track">
+          <article class="content-card">
+            <div class="content-card__image"></div>
+            <svg class="content-card__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+            <span class="content-card__eyebrow">CONTEÚDO 01</span>
+            <h3 class="content-card__title">Desinflamação na Prática</h3>
+            <p class="content-card__text">Como reduzir inflamação com escolhas alimentares mais inteligentes e simples de aplicar no dia a dia</p>
+          </article>
+          <article class="content-card">
+            <div class="content-card__image"></div>
+            <svg class="content-card__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+            <span class="content-card__eyebrow">CONTEÚDO 02</span>
+            <h3 class="content-card__title">Alimentação Anti-inflamatória</h3>
+            <p class="content-card__text">Quais alimentos ajudam o corpo a funcionar melhor e como montar refeições mais equilibradas</p>
+          </article>
+          <article class="content-card">
+            <div class="content-card__image"></div>
+            <svg class="content-card__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+            <span class="content-card__eyebrow">CONTEÚDO 03</span>
+            <h3 class="content-card__title">Intestino x Energia</h3>
+            <p class="content-card__text">Entenda como digestão, inflamação e disposição estão diretamente conectadas</p>
+          </article>
+          <article class="content-card">
+            <div class="content-card__image"></div>
+            <svg class="content-card__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+            <span class="content-card__eyebrow">CONTEÚDO 04</span>
+            <h3 class="content-card__title">Hábitos que Sabotam</h3>
+            <p class="content-card__text">Os principais padrões alimentares e comportamentos que aumentam inchaço, fadiga e desconforto</p>
+          </article>
+        </div>
+        <button class="round-btn carousel__side-btn" type="button" aria-label="Avançar conteúdos" data-carousel-side>
+          <svg><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 5 · BONUS ============ -->
+    <section class="bonus" id="bonus">
+      <div class="bonus__inner">
+        <div class="bonus__copy">
+          <span class="chip chip--light" data-reveal="fade-up"><svg><use href="#i-gift"/></svg>Bônus</span>
+          <h2 class="section-title bonus__title" data-reveal="title-write">Ao adquirir o e-book Viva Leve, <span>você vai levar um presente!</span></h2>
+          <p class="bonus__text" data-reveal="fade-up">Você vai ganhar também uma lista de compras prática para ir ao mercado com mais segurança e montar uma rotina anti-inflamatória sem esquecer de nada!</p>
+          <p class="bonus__price" data-reveal="fade-up">De <s>R$29,90</s> por apenas <strong>R$0,00</strong></p>
+          <a class="hero__cta" href="#precos" data-reveal="soft-scale">
+            <span>Quero começar agora</span>
+            <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+        <div class="bonus__visual" data-reveal="soft-scale">
+          <span class="bonus__halo" aria-hidden="true"></span>
+          <img class="bonus__image" src="https://res.cloudinary.com/dalwymbky/image/upload/v1782349615/entregavel_ckh5rx.png" alt="Mockup do guia completo da saúde anti-inflamatória e equilíbrio metabólico" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6 · FEEDBACKS CAROUSEL ============ -->
+    <section class="feedbacks" id="feedbacks">
+      <div class="feedbacks__header">
+        <div class="feedbacks__intro">
+          <span class="chip chip--light" data-reveal="fade-up"><svg><use href="#i-chat"/></svg>Feedbacks</span>
+          <h2 class="section-title feedbacks__title" data-reveal="title-write"><span>O que dizem</span> sobre a autora e se trabalho?</h2>
+        </div>
+        <div class="feedbacks__dots" aria-hidden="true" data-reveal="fade-up">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="carousel feedbacks__carousel" data-carousel="feedbacks" data-mode="forward">
+        <div class="carousel__track feedbacks__track">
+          <article class="feedback-card">
+            <span class="feedback-card__quote" aria-hidden="true">“</span>
+            <p class="feedback-card__text">O conteúdo é muito claro e fácil de aplicar. Ele ajuda a entender melhor como reduzir inflamação no dia a dia, organizar as refeições com mais consciência e construir hábitos mais leves sem radicalismo.</p>
+            <div class="feedback-card__author"><span class="feedback-card__avatar"></span><div><strong>Ana Julia Linhares</strong><small>Nutricionista Integrativa</small></div></div>
+          </article>
+          <article class="feedback-card">
+            <span class="feedback-card__quote" aria-hidden="true">“</span>
+            <p class="feedback-card__text">Gostei muito da forma prática como as orientações foram apresentadas. A lista de compras e o passo a passo deixam a rotina mais simples, especialmente para quem quer melhorar a alimentação sem complicação.</p>
+            <div class="feedback-card__author"><span class="feedback-card__avatar"></span><div><strong>Ana Julia Linhares</strong><small>Nutricionista Integrativa</small></div></div>
+          </article>
+          <article class="feedback-card">
+            <span class="feedback-card__quote" aria-hidden="true">“</span>
+            <p class="feedback-card__text">Um material acolhedor e bem fundamentado. As estratégias são realistas, respeitam a rotina de cada pessoa e mostram que é possível desinflamar o corpo com constância e equilíbrio.</p>
+            <div class="feedback-card__author"><span class="feedback-card__avatar"></span><div><strong>Ana Julia Linhares</strong><small>Nutricionista Integrativa</small></div></div>
+          </article>
+          <article class="feedback-card">
+            <span class="feedback-card__quote" aria-hidden="true">“</span>
+            <p class="feedback-card__text">Recomendo para quem sente inchaço, cansaço e quer entender a relação entre intestino e energia. A linguagem é simples e o conteúdo traz resultados que dá para sentir na prática.</p>
+            <div class="feedback-card__author"><span class="feedback-card__avatar"></span><div><strong>Ana Julia Linhares</strong><small>Nutricionista Integrativa</small></div></div>
+          </article>
+        </div>
+        <button class="round-btn carousel__side-btn" type="button" aria-label="Próximo feedback" data-carousel-side>
+          <svg><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 7 · PRICING COMPARISON ============ -->
+    <section class="pricing" id="precos">
+      <div class="pricing__inner">
+        <span class="chip chip--dark" data-reveal="fade-up"><svg><use href="#i-tag"/></svg>Escolha seu plano</span>
+        <h2 class="section-title pricing__title" data-reveal="title-write">Compare e escolha a <span>melhor opção para você</span></h2>
+
+        <div class="pricing__grid">
+          <article class="price-card" data-reveal="slide-right">
+            <div class="price-card__visual" aria-hidden="true">
+              <div class="price-card__book price-card__book--main"></div>
+            </div>
+            <span class="price-card__name">Plano Essencial</span>
+            <h3 class="price-card__title">E-book Viva Leve</h3>
+            <ul class="price-card__list">
+              <li><svg><use href="#i-check"/></svg>E-book completo Viva Leve</li>
+              <li><svg><use href="#i-check"/></svg>Passo a passo anti-inflamatório</li>
+              <li><svg><use href="#i-check"/></svg>Acesso imediato</li>
+              <li class="is-off"><svg><use href="#i-x"/></svg>Lista de compras Anti-inflamatória</li>
+              <li class="is-off"><svg><use href="#i-x"/></svg>Acesso vitalício às atualizações</li>
+            </ul>
+            <p class="price-card__price"><small>por apenas</small>R$19,90</p>
+            <a class="price-card__btn" href="#oferta">Quero o plano essencial</a>
+          </article>
+
+          <article class="price-card price-card--vip" data-reveal="slide-left">
+            <span class="price-card__ribbon">Mais vendido</span>
+            <div class="price-card__visual" aria-hidden="true">
+              <div class="price-card__book price-card__book--main"></div>
+              <div class="price-card__book price-card__book--bonus"></div>
+            </div>
+            <span class="price-card__name">Combo Avançado VIP</span>
+            <h3 class="price-card__title">E-book + Lista de compras Anti-inflamatória</h3>
+            <ul class="price-card__list">
+              <li><svg><use href="#i-check"/></svg>E-book completo Viva Leve</li>
+              <li><svg><use href="#i-check"/></svg>Passo a passo anti-inflamatório</li>
+              <li><svg><use href="#i-check"/></svg>Acesso imediato</li>
+              <li><svg><use href="#i-check"/></svg>Lista de compras Anti-inflamatória</li>
+              <li><svg><use href="#i-check"/></svg>Acesso vitalício às atualizações</li>
+            </ul>
+            <p class="price-card__price"><small>de <s>R$49,80</s> por apenas</small>R$27,90</p>
+            <a class="price-card__btn price-card__btn--vip" href="#oferta">Quero o combo VIP</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8 · OFFER ============ -->
+    <section class="offer" id="oferta">
+      <div class="offer__ribbons" aria-hidden="true">
+        <div class="offer__ribbon offer__ribbon--a"><span>OFERTA ESPECIAL · VIVA LEVE · OFERTA ESPECIAL · VIVA LEVE · OFERTA ESPECIAL · VIVA LEVE · OFERTA ESPECIAL · VIVA LEVE ·</span></div>
+        <div class="offer__ribbon offer__ribbon--b"><span>ACESSO IMEDIATO · BÔNUS EXCLUSIVO · ACESSO IMEDIATO · BÔNUS EXCLUSIVO · ACESSO IMEDIATO · BÔNUS EXCLUSIVO ·</span></div>
+      </div>
+      <div class="offer__card" data-reveal="blur-in">
+        <svg class="offer__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+        <span class="offer__eyebrow">Combo Avançado VIP</span>
+        <h2 class="section-title offer__title">Comece hoje a sua <span>rotina mais leve</span></h2>
+        <ul class="offer__list">
+          <li><svg><use href="#i-check"/></svg>E-book Viva Leve completo</li>
+          <li><svg><use href="#i-check"/></svg>Lista de compras Anti-inflamatória</li>
+          <li><svg><use href="#i-check"/></svg>Acesso imediato e vitalício</li>
+          <li><svg><use href="#i-check"/></svg>7 dias de garantia incondicional</li>
+        </ul>
+        <p class="offer__old">De <s>R$49,80</s> por apenas</p>
+        <p class="offer__price"><small>R$</small>27<span>,90</span></p>
+        <p class="offer__note">Pagamento único · Pix ou cartão</p>
+        <a class="hero__cta hero__cta--strong" href="#precos">
+          <span>QUERO O COMBO AVANÇADO VIP</span>
+          <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ 9 · GUARANTEE ============ -->
+    <section class="guarantee" id="garantia">
+      <div class="guarantee__inner">
+        <div class="seal" data-reveal="soft-scale" aria-hidden="true">
+          <svg class="seal__ring seal__ring--outer" viewBox="0 0 200 200">
+            <defs><path id="seal-path" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#seal-path">GARANTIA INCONDICIONAL · 7 DIAS · RISCO ZERO · GARANTIA INCONDICIONAL ·</textPath></text>
+          </svg>
+          <span class="seal__ring seal__ring--dash"></span>
+          <div class="seal__core">
+            <strong>7</strong>
+            <span>dias de<br>garantia</span>
+          </div>
+        </div>
+        <div class="guarantee__copy">
+          <span class="chip chip--light" data-reveal="fade-up"><svg><use href="#i-shield"/></svg>Garantia</span>
+          <h2 class="section-title guarantee__title" data-reveal="title-write">Seu risco é <span>zero</span></h2>
+          <p data-reveal="fade-up">Você tem 7 dias para acessar todo o conteúdo, aplicar as estratégias e sentir a diferença na sua rotina. Se por qualquer motivo não ficar satisfeita, basta enviar uma mensagem e devolvemos 100% do seu investimento, sem perguntas.</p>
+          <a class="hero__cta" href="#oferta" data-reveal="soft-scale">
+            <span>Quero começar agora</span>
+            <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 · AUTHOR ============ -->
+    <section class="author" id="autora">
+      <div class="author__inner">
+        <div class="author-card" data-reveal="tilt-up">
+          <div class="author-card__top">
+            <span class="author-card__avatar"><svg><use href="#i-mark"/></svg></span>
+            <div class="author-card__id">
+              <strong>Ana Julia Linhares</strong>
+              <small>Nutricionista Integrativa</small>
+            </div>
+            <span class="author-card__dots" aria-hidden="true">•••</span>
+          </div>
+          <div class="author-card__bars" aria-hidden="true"><span class="is-on"></span><span></span><span></span></div>
+          <div class="author-card__image" role="img" aria-label="Arte editorial da autora sobre nutrição"></div>
+        </div>
+        <div class="author__copy">
+          <span class="chip chip--dark" data-reveal="fade-up"><svg><use href="#i-user"/></svg>Autora</span>
+          <h2 class="section-title author__title" data-reveal="title-write"><span>Quem sou eu?</span></h2>
+          <p data-reveal="fade-up">Sou Ana Julia Linhares, nutricionista especializada em saúde integrativa e alimentação anti-inflamatória. Há anos acompanho mulheres que convivem com inchaço, cansaço e desconfortos digestivos e que desejam uma rotina mais leve e sustentável.</p>
+          <p data-reveal="fade-up">Reuni no Viva Leve tudo o que aplico na prática clínica: orientações baseadas em evidências, estratégias simples e um passo a passo pensado para caber no seu dia a dia, sem radicalismo.</p>
+          <ul class="author__stats" data-reveal="fade-up">
+            <li><strong>+8</strong><span>anos de prática clínica</span></li>
+            <li><strong>+2 mil</strong><span>pacientes atendidas</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11 · FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="faq__inner">
+        <span class="chip chip--light" data-reveal="fade-up"><svg><use href="#i-help"/></svg>Dúvidas</span>
+        <h2 class="section-title faq__title" data-reveal="title-write">Perguntas <span>frequentes</span></h2>
+        <div class="faq__list" data-reveal="fade-up">
+          <details class="faq__item" open>
+            <summary>Como vou receber o e-book?<svg><use href="#i-chevron"/></svg></summary>
+            <p>Logo após a confirmação do pagamento, você recebe no seu e-mail o acesso ao e-book e aos bônus, em formato digital para ler no celular, tablet ou computador.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Preciso seguir uma dieta restritiva?<svg><use href="#i-chevron"/></svg></summary>
+            <p>Não. O método foi pensado para ser sustentável e sem radicalismo. Você aprende a fazer escolhas mais inteligentes e a montar refeições equilibradas com alimentos do dia a dia.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O conteúdo serve para iniciantes?<svg><use href="#i-chevron"/></svg></summary>
+            <p>Sim. A linguagem é simples e o passo a passo é claro, ideal para quem está começando e também para quem já busca uma alimentação mais saudável.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Por quanto tempo terei acesso?<svg><use href="#i-chevron"/></svg></summary>
+            <p>No Combo Avançado VIP o acesso é vitalício, incluindo futuras atualizações do material.</p>
+          </details>
+          <details class="faq__item">
+            <summary>E se eu não gostar?<svg><use href="#i-chevron"/></svg></summary>
+            <p>Você tem 7 dias de garantia incondicional. Se não ficar satisfeita, devolvemos 100% do valor investido.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O e-book substitui o acompanhamento nutricional?<svg><use href="#i-chevron"/></svg></summary>
+            <p>Não. O e-book é um material educativo e complementar. Para necessidades específicas, o ideal é contar com o acompanhamento individual de um profissional de saúde.</p>
+          </details>
+        </div>
+        <div class="center-cta" data-reveal="soft-scale">
+          <a class="hero__cta hero__cta--ghost" href="#oferta">
+            <span>Ainda tenho dúvidas</span>
+            <span class="hero__cta-icon"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
